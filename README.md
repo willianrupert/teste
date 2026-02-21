@@ -50,7 +50,26 @@ Fraudes financeiras são mutáveis. Para proteger o modelo contra padrões de at
 Na indústria de pagamentos, um modelo que atua como "caixa-preta" é inaceitável devido a exigências regulatórias. Para solucionar isso, integrei a Teoria dos Jogos através da biblioteca **SHAP (SHapley Additive exPlanations)**.
 
 * **Visão Macro (Global):** Os gráficos *SHAP Summary* confirmaram a eficácia da Engenharia de Características. As interações matemáticas manuais (`V4_minus_V14` e `V14_V12_sum`) assumiram as posições de liderança no ranqueamento de importância, provando que o poder do modelo veio da manipulação inteligente dos dados, e não do acaso.
+
+<div align="center">
+  <img src="notebooks/shap_summary.png" alt="SHAP Summary - Importância Global das Features" width="700"/>
+</div>
+
+<br>
+
 * **Visão Micro (Local):** Utilizei o *SHAP Waterfall* para destrinchar casos individuais de fraude. O sistema agora é capaz de emitir um relatório explicando exatamente quantos pontos percentuais cada variável contribuiu para o bloqueio de uma transação específica, entregando uma ferramenta pronta para as equipes de Prevenção a Fraude.
+
+<div align="center">
+  <img src="notebooks/shap_local_fraude.png" alt="SHAP Waterfall - Explicabilidade Local de uma Fraude" width="700"/>
+</div>
+
+<br>
+
+* **Impacto Operacional (Matriz de Confusão):** Para coroar a tradução para o negócio, a matriz de confusão demonstra o excelente equilíbrio alcançado. O modelo restringe severamente os Falsos Positivos, permitindo que a operação de aprovação de cartões flua de forma saudável e sem fricções desnecessárias para os clientes legítimos, ao passo que garante a captura implacável das anomalias.
+
+<div align="center">
+  <img src="notebooks/matriz_confusao.png" alt="Matriz de Confusão - Equilíbrio de Falsos Positivos e Negativos" width="500"/>
+</div>
 
 ---
 
