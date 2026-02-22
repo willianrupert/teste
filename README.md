@@ -83,4 +83,4 @@ A base de código foi estruturada pensando em um *deploy* corporativo e não ape
 
 ## 🏁 6. Conclusão
 
-Este repositório prova que a excelência em *Machine Learning* reside na inteligência matemática aplicada aos dados e na disciplina metodológica inquebrável. O modelo resultante atinge uma precisão ímpar (ROC-AUC de 0.99090), é auditável, robusto contra flutuações e perfeitamente dimensionado para salvar uma operação financeira real das perdas diárias por estorno.
+Este repositório mostra que a a robustez em *Machine Learning* reside na inteligência matemática aplicada aos dados e na disciplina metodológica. O modelo resultante atinge uma precisão ímpar (ROC-AUC de 0.99090), é auditável, robusto contra flutuações e perfeitamente dimensionado para salvar uma operação financeira real das perdas diárias por estorno.
