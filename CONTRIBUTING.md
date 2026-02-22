@@ -6,7 +6,7 @@ Aqui, detalho como apliquei boas práticas de engenharia de *software*, segrega�
 
 ---
 
-## 🛠️ 1. Configuração do Ambiente Local (Reprodutibilidade: 5/5)
+##  1. Configuração do Ambiente Local (Reprodutibilidade: 5/5)
 
 Para evitar os clássicos problemas de dependências cruzadas e garantir que a aplicação funciona perfeitamente em qualquer máquina, estruturei o projeto com recurso a ambientes virtuais isolados.
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📁 2. Arquitetura e Segregação de Ficheiros (Qualidade de Engenharia: 5/5)
+##  2. Arquitetura e Segregação de Ficheiros (Qualidade de Engenharia: 5/5)
 
 A separação de responsabilidades é o coração deste projeto. Evitei deliberadamente *notebooks* monolíticos, optando por uma estrutura modular digna de um sistema *end-to-end*.
 
@@ -62,7 +62,7 @@ A execução no ficheiro `main.ipynb` obedece a um rigoroso protocolo de valida�
 
 ---
 
-## 🚀 4. Guia de Submissão no Kaggle
+##  4. Guia de Submissão no Kaggle
 
 A estratégia de submissão gerada por este código blinda a solução contra as surpresas metodológicas e as quedas abruptas de classificação no fecho da avaliação:
 
@@ -70,7 +70,7 @@ A estratégia de submissão gerada por este código blinda a solução contra as
 
 ---
 
-## 🛠️ 5. Inferência em Novos Dados (Escalabilidade da Solução)
+##  5. Inferência em Novos Dados (Escalabilidade da Solução)
 
 Se desejares contribuir ou utilizar este modelo para inferir a probabilidade de fraude em **novas transações** (simulando um sistema financeiro em tempo real), basta importar os módulos pré-treinados:
 
