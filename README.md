@@ -1,11 +1,11 @@
-# 🛡️ Detecção de Fraudes em Cartões de Crédito: Uma Abordagem Robusta com Stacking Ensembles e XAI
+#  Detecção de Fraudes em Cartões de Crédito: Uma Abordagem Robusta com Stacking Ensembles e XAI
 
 **Autor:** Willian Rupert (Estudante de Ciência da Computação - CIn/UFPE)  
 **Objetivo:** Desenvolvimento de um modelo de *Machine Learning* de alta precisão para o desafio de classificação de transações financeiras fraudulentas, priorizando o rigor metodológico, otimização Bayesiana, a reprodutibilidade e a explicabilidade voltada para o negócio.
 
 ---
 
-## 🎯 1. O Problema e a Visão de Negócio (Adequação da Métrica)
+##  1. O Problema e a Visão de Negócio (Adequação da Métrica)
 
 Em sistemas de pagamentos reais, lidamos com um cenário de **extremo desbalanceamento de classes**, onde as fraudes representam uma fração minúscula das transações diárias. 
 
@@ -15,7 +15,7 @@ Aprovar uma fraude (Falso Negativo) tem um custo de estorno devastador. Assim, a
 
 ---
 
-## 🧪 2. Rigor Metodológico e Prevenção de Data Leakage
+##  2. Rigor Metodológico e Prevenção de Data Leakage
 
 Para garantir que a performance não fosse fruto de memorização, adotei uma política inegociável de segregação:
 * **Hold-out Validation (80/20):** Separei 20% dos dados como um conjunto cego. Todas as decisões de arquitetura e geração de métricas foram tomadas baseadas **apenas** nos 80% do treino.
@@ -23,7 +23,7 @@ Para garantir que a performance não fosse fruto de memorização, adotei uma po
 
 ---
 
-## 🚀 3. A Evolução da Arquitetura (A Rota do 0.99090)
+##  3. A Evolução da Arquitetura (A Rota do 0.99090)
 
 O desenvolvimento deste modelo foi um processo científico e iterativo, registrado ao longo de 7 submissões na plataforma Kaggle.
 
@@ -44,7 +44,7 @@ A arquitetura final é composta por:
 
 ---
 
-## 🧠 4. Explicabilidade e Tradução para o Negócio (XAI)
+##  4. Explicabilidade e Tradução para o Negócio (XAI)
 
 Modelos "caixa-preta" são vetados em ambientes regulados. A arquitetura foi desmistificada utilizando a biblioteca **SHAP (SHapley Additive exPlanations)**.
 
@@ -72,7 +72,7 @@ Modelos "caixa-preta" são vetados em ambientes regulados. A arquitetura foi des
 
 ---
 
-## 🏗️ 5. Qualidade de Engenharia e Reprodutibilidade
+##  5. Qualidade de Engenharia e Reprodutibilidade
 
 A base de código foi estruturada pensando em um *deploy* corporativo e não apenas na competição:
 * **`src/preprocessing.py`:** Encapsula, de forma estanque, todas as regras de normalização e transformações algébricas, desenhado para receber novas linhas de dados no futuro.
